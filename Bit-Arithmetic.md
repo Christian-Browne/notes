@@ -1,10 +1,4 @@
-# Counting Bits
-
-Created: May 10, 2023 2:25 PM
-Status: Open
-URL: https://youtu.be/Xpk67YzOn5w
-URL (1): https://youtu.be/PMpNhbMjDj0
-Updated: May 10, 2023 2:38 PM
+# Bit Arithmetic
 
 ## Foundation
 
