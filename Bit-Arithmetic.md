@@ -13,14 +13,14 @@ Updated: May 10, 2023 2:38 PM
 - A bit is one transitor that can be turned on/of
 - In this picture there are 8 bits
 
-![Screenshot 2023-05-10 at 12.39.24 PM.png](Counting%20Bits%20e553df5d415f4134a576492c9a59684c/Screenshot_2023-05-10_at_12.39.24_PM.png)
+![Image](images/Screenshot_2023-05-10_at_12.39.24_PM.png)
 
 ### Byte
 
 - A byte is a collection of bits
 - In this picture 8 bits make up 1 byte
 
-![Screenshot 2023-05-10 at 12.39.36 PM.png](Counting%20Bits%20e553df5d415f4134a576492c9a59684c/Screenshot_2023-05-10_at_12.39.36_PM.png)
+![image](images/Screenshot_2023-05-10_at_12.39.36_PM.png)
 
 ### ASCII
 
@@ -28,7 +28,7 @@ Updated: May 10, 2023 2:38 PM
 - so the combination of bits in a bte allow up to **255** different characters
 - In this image **A** represents the number **65** which in binary which is **01000001**
 
-![Screenshot 2023-05-10 at 12.49.42 PM.png](Counting%20Bits%20e553df5d415f4134a576492c9a59684c/Screenshot_2023-05-10_at_12.49.42_PM.png)
+![image](images/Screenshot_2023-05-10_at_12.49.42_PM.png)
 
 ---
 
@@ -38,7 +38,7 @@ Updated: May 10, 2023 2:38 PM
 - Computers could only use **255** numbers as for a byte
 - And using 4 bytes could use **1020** as the highest number
 
-![Screenshot 2023-05-10 at 12.56.37 PM.png](Counting%20Bits%20e553df5d415f4134a576492c9a59684c/Screenshot_2023-05-10_at_12.56.37_PM.png)
+![Screenshot 2023-05-10 at 12.56.37 PM.png](images/Screenshot_2023-05-10_at_12.56.37_PM.png)
 
 ## Solution
 
@@ -48,8 +48,8 @@ Updated: May 10, 2023 2:38 PM
     - 32-bits is the most common for most computer programs
 - Increased exponentialy from ***255*** to ***65,535***
 
-![Screenshot 2023-05-10 at 1.01.07 PM.png](Counting%20Bits%20e553df5d415f4134a576492c9a59684c/Screenshot_2023-05-10_at_1.01.07_PM.png)
-
+![Image](images/Screenshot_2023-05-10_at_1.01.07_PM.png)
+images/Screenshot_2023-05-10_at_12.56.37_PM.png
 ---
 
 ## Counting Bits
