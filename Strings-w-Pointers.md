@@ -16,7 +16,7 @@ int main () {
     char str[] = "The quick brown fox";
     char ch = 'q';
 
-    int *pointer = NULL;
+    char *pointer = NULL;
     pointer = strchr(str, ch);
     printf("Found ::: %c", *pointer);
     // Found ::: q
