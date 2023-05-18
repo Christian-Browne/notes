@@ -28,3 +28,14 @@ int main () {
 - Remember the pointer stores the address of something else that is already in memory
   - \*pointer on the right side of the equal sign means to dereference the pointer
   - Derefercing a pointer: Go to the address and get its value
+
+## Returning strings from functions
+
+- Return `char*` from a function beacuse you have to return pointer to first character in string
+- Return char works when you just want to return a single character
+
+```c
+char* reverse(char str[]) {
+    return "string";
+}
+```
