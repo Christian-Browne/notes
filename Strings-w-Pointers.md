@@ -1,5 +1,7 @@
 # Strings with Pointers
 
+> Remember the string data type value is just a **pointer to first address** in a string
+
 ## Return Pointers
 
 - Some string functions in c return pointer as a value
