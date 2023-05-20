@@ -1,8 +1,8 @@
-<link rel="stylesheet" type="text/css" href="styles.css">
-
 # Pointers
 
-💡 Pointers in C allow us to poke around the computers hardware such as its memory.
+:smile:
+
+> 💡 Pointers in C allow us to poke around the computers hardware such as its memory.
 
 > “C is the closest to the computers’ hardware you can get before things get _scary_ such as using assembly languages”
 
