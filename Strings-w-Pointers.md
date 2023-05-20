@@ -41,3 +41,15 @@ char* reverse(char str[]) {
     return "string";
 }
 ```
+
+## String Copying
+
+- t is not it's own string
+- **s** and **t** are pointers to the same string
+- if i were to change/edit **t** it would also change **s** since they are both pointing to the same string in memory
+
+```c
+char s[] = "string1";
+char t[] = s;
+t[0] = 'A'
+```
