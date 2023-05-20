@@ -1,3 +1,5 @@
+<link rel="stylesheet" type="text/css" href="styles.css">
+
 # Pointers
 
 💡 Pointers in C allow us to poke around the computers hardware such as its memory.

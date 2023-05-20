@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Georgia&display=swap');
+
+body {
+  background-color: #f8f8f8;
+  font-family: 'Georgia', serif;
+  color: #333;
+  line-height: 1.6;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Patrick Hand', cursive;
+  color: #004d40;
+  border-bottom: 2px solid #b2dfdb;
+  padding-bottom: 5px;
+}
+
+h1 {
+  font-size: 2em;
+}
+h2 {
+  font-size: 1.75em;
+}
+h3 {
+  font-size: 1.5em;
+}
+h4 {
+  font-size: 1.25em;
+}
+h5 {
+  font-size: 1em;
+}
+h6 {
+  font-size: 0.875em;
+}
+
+p,
+ul,
+ol,
+pre,
+table,
+dl,
+blockquote,
+figure {
+  margin-bottom: 1.6em;
+}
+
+pre,
+code {
+  font-family: 'Courier New', monospace;
+  background-color: #e8f5e9;
+  padding: 1em;
+  border-radius: 5px;
+}
+
+blockquote {
+  border-left: 5px solid #b2dfdb;
+  padding-left: 15px;
+  font-style: italic;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+table,
+th,
+td {
+  border: 1px solid #004d40;
+  padding: 0.5em;
+  text-align: left;
+}
+
+figure {
+  text-align: center;
+  font-style: italic;
+}
+
+a {
+  color: #00695c;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
