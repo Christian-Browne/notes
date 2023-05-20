@@ -1,15 +1,19 @@
 # Pointers
 
-:smile:
-
 > 💡 Pointers in C allow us to poke around the computers hardware such as its memory.
 
-> “C is the closest to the computers’ hardware you can get before things get _scary_ such as using assembly languages”
+> “C is the closest to the computers’ hardware you can get before things get **_scary_** such as using assembly languages”
 
 ## Pointers
 
 - P is a variable that is stored in memory whose value is the address of n
   - It’s a variable that points to another variable
+
+**IMPORTANT:**
+
+- **_Everytime you create a pointer variable for the first time you are saying that this variable is a pointer_**
+
+- **_Everytime/instance you use the `*` after that is when you are dereferencing the pointer by gettin the value at the address_**
 
 ```c
 int n = 50;
@@ -21,7 +25,7 @@ pointer p = address of n // What it basically is
 // p = 0x123
 
 printf("%i\n", *p)
-// *p on right side of the equal points to value at the address
+// *p here points to value at the address
 // It's basically saying go to the address and get its value
 
 printf("%p", p)
@@ -80,7 +84,7 @@ vtpr = &f;
 printf("f value:", *(float *)vtpr);
 ```
 
-## Pointer and Array
+## Pointer and Arrays
 
 Use pointers for arrays as they are generally more efficient because they use less memory and execute faster
 
@@ -101,6 +105,8 @@ valptr = &values[0];
 
 ## Pointers in Functions
 
+- For functions parameters when you use a pointer you are just passing in the pointer type which should be an address
+
 - If you do pass "const" pointer into a function that function is basically termed as a readonly as it doesn't modify or change the pointer
 
 - If you want to modify the pointer don't make it a const in the function arguments
@@ -119,5 +125,33 @@ int main() {
 // Return void because it's changing the original values
 void squareNum(int *num) {
     *num *= *num;
+}
+```
+
+## Pointer Arithemetic
+
+### How this code works
+
+1. (Parenthesis first) Goes to the third address in the array
+2. '\*' means to dereference it, so it goes to it's value
+3. Changes it's value to 20
+
+```c
+int main() {
+    int vals[100];
+    vals[0] = 25;
+    int *ptr = (int*)(malloc(3 * sizeof(int)));
+
+    // 1. (Parenthesis first) Goes to the third address in the array
+    // 2. '*' means to dereference it and to go to it's value
+    // 3. changes it's value to 20
+
+    *(ptr + 3) = 20;
+
+    printf("%d", *(ptr + 3));
+
+    free(ptr);
+
+    return 0;
 }
 ```
