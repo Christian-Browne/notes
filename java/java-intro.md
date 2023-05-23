@@ -1,4 +1,4 @@
-# Intro
+# Intro to Java
 
 ## Primitve
 
@@ -13,8 +13,9 @@
 
 `int` stores the actual value
 
-`Integer` stores the referenc/address to the value
+`Integer` stores the reference/address to the value
 
+- This is a Integer class
 - This is called autoboxing
 - You can actually change the value when you pass it in to functions because you have the address/pointer to the value
 
@@ -29,4 +30,19 @@ public class HelloWorld {
         Integer i2 = 2;
     }
 }
+```
+
+### Comparisons
+
+`equals`
+
+- Allows you to compare to reference types
+- arrays, objects, etc
+
+```java
+int[] arr1 = {1, 2, 3};
+int[] arr2 = {1, 2, 3};
+
+System.out.println(Arrays.equals(arr1, arr2)); // true
+
 ```
