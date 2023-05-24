@@ -8,6 +8,7 @@
 
 - Store addresses to value
   - classes, arrays, etc
+- TIP: Arrays are automatically passed by reference into functions
 
 ## Autoboxing and referencing
 
