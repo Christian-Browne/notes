@@ -3,7 +3,7 @@
 For any object type you can do this `Example.AnyMethod()` because it is a object and a object can have methods
 
 - Big decimal, string, and other objects can have methods
-- Any method on a object type makes a copy and modifies it unless you pass in a reference type like an array
+- Beaware of object types that mutate the origninal value and ones that don't.
 
 You can't do methods on primitives such as ints, double
 `num.toString()` won't work because a int is not a object
