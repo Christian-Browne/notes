@@ -6,7 +6,7 @@
 
 `protected` type
 
-- Class instances can access variable
+- children/extended classes can access variable
 
 ## Tip
 
