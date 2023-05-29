@@ -93,3 +93,17 @@ public class Store {
 
 }
 ```
+
+## Have to initialize contructor
+
+Have to set up constructor to duplicate values into new book on the book class when you pass just a book into a constructor.
+
+## Example
+
+```java
+public class Book {
+    public Book(Book source) {
+        this.tile = source.title
+    }
+}
+```

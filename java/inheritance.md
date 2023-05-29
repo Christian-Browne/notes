@@ -6,7 +6,17 @@
 
 `protected` type
 
-- children/extended classes can access variable
+- children/extended classes can mutate variable
+- Can use the field directly in sub classes
+
+`private`
+
+- can't be accessed directly outside of class
+- Only class methods have access
+
+```java
+Example.name = "Wrong"
+```
 
 ## Tip
 
