@@ -27,5 +27,5 @@ What does it do?
 Purpose: is a more generalized method that all children will have but are implemented differently
 
 - exposes behavior that a child most override
-- initalize abstract method in parent class is all you do
+- initalize abstract method in parent class is all you have do
 - Specify implmentation of it in child class
