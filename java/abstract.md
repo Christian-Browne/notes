@@ -1,4 +1,4 @@
-# Abstract ethod
+# Abstract Method
 
 - a class you cannot create objects from
 
@@ -15,7 +15,7 @@ Making a a new instance of `Product` doesn't really serve any purpose we don't k
 Product product = new product(19.99, "Blue", "NO_NAME");
 ```
 
-### Making Product an abstract clas is the solution here.
+### Making Product an abstract class is the solution here.
 
 What does it do?
 

@@ -8,10 +8,16 @@ Static variable is a variable that is shared across all instances of class that 
 - Example: keeping count of all class instances
 - all subclasses can have access of the static count
 
+## Static Function
+
 Static function is one that doesn't modify variables or take in fields that are in the class
 
+> Class Doesn't have to be instanciated to call it's methods
+
+> every method in main function has to be static so main can call it without making a new instance
+
 - Staic method are mostly used for utility functions
-- Children have access to static
+- Children have access to static method
 - Ex. Sum function that sums any two numbers you pass in
 - Class can call static method without having to create an instance
 - other methods are instance methods
