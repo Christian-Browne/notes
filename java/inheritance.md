@@ -36,7 +36,7 @@ For the most part you will be create all of the new instances using the **salari
 ### Remember
 
 - Each class will have it's own responsibilities
-- Each instance should add more functionality to the previous class
+- Each instance should add more functionality to the previous class.
 
 ```java
 Worker ex1 = new Worker("Chris", "05/04/2002");
