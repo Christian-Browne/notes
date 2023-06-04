@@ -118,7 +118,7 @@ results.close();
 
 ## SQL Injections
 
-use prepared statements
+### Use prepared statements
 
 ```java
 String query = "INSERT INTO user (first_name, last_name, email, fk_user_role, money) VALUES (?, ?, ?, ?, ?)";
@@ -137,4 +137,42 @@ int rows = preparedStatement.executeUpdate();
 System.out.println(rows);
 preparedStatement.close();
 db.close()
+```
+
+- When recieving value from each column you can specify the column by the index
+
+### Selecting using prepared statements
+
+- `setString()` is going to the first question mark and putting `String type` there
+- The values are stored in a new class in this example
+
+```java
+public static void typeRoute(String inputType) {
+    String query = "SELECT * FROM ingredients WHERE type=LOWER(?)";
+
+    try {
+        Connection db = DBUtils.getConnection();
+
+        PreparedStatement preparedStatement = db.prepareStatement(query);
+        preparedStatement.setString(1, inputType);
+        ResultSet results = preparedStatement.executeQuery();
+
+        // The values are being stored then added to new class
+        while(results.next()) {
+            System.out.println(" | Type: " + results.getString(4));
+            String title = results.getString(2);
+            String type = results.getString(4);
+            Ingredient ingredient = new Ingredient(title, type);
+
+            ingredients.add(ingredient);
+        }
+
+
+        results.close();
+        preparedStatement.close();
+        db.close();
+    } catch (SQLException e) {
+        System.err.println(e.getMessage());
+    }
+}
 ```
