@@ -42,3 +42,29 @@ You can add DEFAULT values as well
 EVERY TABLE WILL HAVE A PRIMARY KEY
 IS HOW YOU WILL INDEX THE TABLE
 EX. ID WILL BE A PRIMARY KEY
+
+---
+
+- COUNT
+
+SELECT `<column_name>` COUNT(\*) FROM `<table_name>`
+SELECT `DISTINCT(<column_name>)` COUNT(\*) FROM `<table_name>`
+
+- WHERE
+
+SELECT \* FROM `<table_name>` WHERE `<coulmn_value>` = `<value>`
+
+- LIKE
+  - Where value is simillar
+- GROUP BY
+- ORDER BY
+- LIMIT
+
+JOIN
+
+- `JOIN` by the **_shared_** foreign and primary key
+- the `JOIN` operation is used to combine rows from two or more tables based on a related column between them. It allows you to retrieve data from multiple tables in a single query, creating a virtual table by merging the selected rows.
+
+---
+
+INDEXES
