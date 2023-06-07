@@ -12,7 +12,7 @@ Static variable is a variable that is shared across all instances of class that 
 
 Static function is one that doesn't modify variables or take in fields that are in the class
 
-> Class Doesn't have to be instanciated to call it's methods
+> Class Doesn't have to be instanstiated to call it's methods
 
 > every method in main function has to be static so main can call it without making a new instance
 
