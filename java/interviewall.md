@@ -312,91 +312,83 @@
 
     - The factory pattern is a creational design pattern that provides an interface for creating objects in a superclass, but allows subclasses to alter the type of objects that will be created.
 
-79. **What is the difference between overloading and overriding in Java?**
-
-    - Method overloading is when multiple methods have the same name but different parameters. Method overriding is when a subclass provides a specific implementation of a method that is already provided by its superclass.
-
-80. **What is the difference between == and equals() in Java?**
-
-    - The '==' operator compares the memory location of two references, not their values. It checks to see if the two operands point to the same object, not equivalent objects. On the other hand, the equals() method actually compares the two objects.
-
-81. **What is the difference between an ArrayList and a Vector in Java?**
+79. **What is the difference between an ArrayList and a Vector in Java?**
 
     - ArrayList is not synchronized while Vector is. This means two threads can call the methods of an ArrayList simultaneously while only one thread can call the methods of a Vector at a time.
 
-82. **What is the difference between a HashSet and a TreeSet in Java?**
+80. **What is the difference between a HashSet and a TreeSet in Java?**
 
     - The HashSet class in Java makes no guarantees as to the iteration order of the set; in particular, it does not guarantee that the order will remain constant over time. A TreeSet is a NavigableSet implementation based on a TreeMap. The elements are ordered using their natural ordering, or by a Comparator provided at set creation time, depending on which constructor is used.
 
-83. **What is the difference between a HashMap and a Hashtable in Java?**
+81. **What is the difference between a HashMap and a Hashtable in Java?**
 
     - Hashtable is synchronized, whereas HashMap is not. This makes HashMap better for non-threaded applications, as unsynchronized Objects typically perform better than synchronized ones. Hashtable does not allow null keys or values. HashMap permits a null key and any number of null values.
 
-84. **What is Polymorphism in Java?**
+82. **What is Polymorphism in Java?**
 
     - Polymorphism in Java is a concept by which we can perform a single action in different ways. So polymorphism means many forms.
 
-85. **What is Encapsulation in Java?**
+83. **What is Encapsulation in Java?**
 
     - Encapsulation in Java is a mechanism of wrapping the data (variables) and code acting on the data (methods) together as a single unit.
 
-86. **What is Inheritance in Java?**
+84. **What is Inheritance in Java?**
 
     - Inheritance in Java is a mechanism in which one object acquires all the properties and behaviors of a parent object.
 
-87. **What is a local, member and a class variable?**
+85. **What is a local, member and a class variable?**
 
     - Local variables are defined in the method and scope of the variables exist only within the method. Member Variable is a variable that is declared inside the class but outside the method. Class Variables are variables declared with in a class, outside any method, with the static keyword.
 
-88. **What is Constructor Overloading and Method Overloading in Java?**
+86. **What is Constructor Overloading and Method Overloading in Java?**
 
     - Constructor overloading in Java is a technique of having more than one constructor with different parameter lists. They are arranged in a way that each constructor performs a different task. Method Overloading is a feature that allows a class to have more than one method having the same name, if their argument lists are different.
 
-89. **What is Association, Aggregation, and Composition in Java?**
+87. **What is Association, Aggregation, and Composition in Java?**
 
     - Association is a relationship where all objects have their own lifecycle and there is no owner. Aggregation is a specialized form of Association where all objects have their own lifecycle but there is ownership. Composition is a specialized form of Aggregation and we can call this as a “death” relationship.
 
-90. **What is the difference between Path and Classpath?**
+88. **What is the difference between Path and Classpath?**
 
     - The Path is the system variable that your operating system uses to locate needed executables from the command line or Terminal window. The Classpath is the parameter in the Java Virtual Machine or the Java compiler that specifies the location of user-defined classes and packages.
 
-91. **What is a Java package and how is it used?**
+89. **What is a Java package and how is it used?**
 
     - A Java package is a namespace that organizes a set of related classes and interfaces. Conceptually you can think of packages as being similar to different folders on your computer.
 
-92. **What are Java Annotations?**
+90. **What are Java Annotations?**
 
     - Java Annotations provide information about the code and they have no direct effect on the code they annotate.
 
-93. **What is the use of the super keyword in Java?**
+91. **What is the use of the super keyword in Java?**
 
     - The super keyword in Java is a reference variable that is used to refer parent class objects.
 
-94. **What is the use of the this keyword in Java?**
+92. **What is the use of the this keyword in Java?**
 
     - In Java, this is a reference variable that refers to the current object.
 
-95. **What is the difference between a JDK and a JVM?**
+93. **What is the difference between a JDK and a JVM?**
 
     - JDK stands for Java Development Kit. It is a software development environment which is used to develop Java applications and applets. JVM stands for Java Virtual Machine. It is an abstract machine. It is a specification that provides a runtime environment in which Java bytecode can be executed.
 
-96. **What is a JVM and what does it do?**
+94. **What is a JVM and what does it do?**
 
     - JVM stands for Java Virtual Machine. It is a specification that provides a runtime environment in which Java bytecode can be executed. JVMs are available for many hardware and software platforms.
 
-97. **What are the different types of inheritance in Java?**
+95. **What are the different types of inheritance in Java?**
 
     - In Java, there are three types of inheritance; single, multilevel, and hierarchical. Java does not support multiple inheritance with classes, although it is possible to achieve with interfaces.
 
-98. **What is the difference between a Window and a Frame?**
+96. **What is the difference between a Window and a Frame?**
 
     - The Frame extends Window to define a main application window that can have a menu bar. A Frame object is a top-level window with a title and a border.
 
-99. **What is the purpose of a private constructor in Java?**
+97. **What is the purpose of a private constructor in Java?**
 
     - A private constructor is used to prevent the class from being instantiated and to be subclassed.
 
-100. **What is garbage collection in Java, and when is it used?**
+98. **What is garbage collection in Java, and when is it used?**
 
 
     - Garbage Collection in Java is a process by which the programs perform automatic memory management. Java programs compile into bytecode that can be run on a Java Virtual Machine. When Java programs run on the JVM, objects are created on the heap, which is a portion of memory dedicated to the program.
