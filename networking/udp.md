@@ -29,6 +29,12 @@ Compared to UDP, websockets provide additional features like reliable delivery, 
 
 In summary, while UDP is often used for low-latency, loss-tolerant scenarios like video streaming, websockets provide a reliable, bidirectional communication channel suitable for real-time interactive applications. The choice between UDP and websockets depends on the specific requirements of the application and the trade-offs between latency, reliability, and communication features.
 
+## Cons
+
+UDP (User Datagram Protocol) has a few disadvantages compared to TCP. Firstly, UDP does not provide reliability mechanisms such as acknowledgments and retransmissions, which means that packets can be lost, duplicated, or arrive out of order. Secondly, UDP does not have built-in congestion control, so in high-traffic situations, UDP packets can congest the network and lead to packet loss or degradation in performance.
+
+Additionally, UDP does not provide flow control, which means that the receiving end might get overwhelmed with incoming data if it cannot process it quickly enough. Lastly, UDP lacks error detection and correction mechanisms, so any errors or corruption in the data will not be automatically detected or corrected. As a result, applications using UDP need to implement their own error handling and recovery mechanisms if necessary.
+
 ## Java Example
 
 ```java

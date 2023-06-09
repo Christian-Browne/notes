@@ -4,6 +4,18 @@
 
 > In I/O, a stream is a channel for data to flow between a program and an input or output source, simplifying reading from or writing to different devices.
 
+## Streams and Why We Need Them
+
+### Memory Effieciency:
+
+Memory Efficiency: As you correctly mentioned, servers have limited RAM (Random Access Memory) resources. When you upload a file, the entire file can consume a significant amount of memory if it is loaded into memory at once. This can be problematic, especially for large files, as it may exhaust the server's available memory. By using streams, the file is processed in smaller, manageable chunks, allowing the server to handle files of any size without running out of memory.
+
+With streams the server can save each packet to the SSD/disk without using up all of the RAM to store the entire file.
+
+### Network Efficiency:
+
+Uploading files as a continuous stream also improves network efficiency. Instead of waiting for the entire file to be loaded into memory before sending it, the server can start processing the file as soon as it receives the first chunk. Additionally, streaming reduces the latency involved in file uploads because data can be transmitted in smaller, frequent packets rather than in one large bulk transfer. This is particularly advantageous in situations with limited bandwidth or high-latency networks.
+
 ## Input Stream Bytes
 
 - interprets each charcter in file as a byte
@@ -151,6 +163,8 @@ file.close();
 reads data (in bytes) more efficiently
 
 Buffering is more efficient because it reduces the number of direct read or write operations by storing data in a buffer and performing batch operations, reducing the overhead of individual I/O calls.
+
+Buffered Reader gets the data in chunks and stores it in buffer instead of doing a sytem call to read each char in a file for example
 
 By minimizing the frequency of accessing the underlying I/O device, buffering can significantly improve performance, especially when dealing with small or frequent I/O operations.
 
