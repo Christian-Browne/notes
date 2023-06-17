@@ -4,7 +4,9 @@
 
 Unchecked Exceptions:
 
-- They are not checked at compile-time but at run-time.For example: ArithmeticException, NullPointerException, ArrayIndexOutOfBoundsException, exceptions under Error class, etc.
+- They are not checked at compile-time but at run-time.
+
+For example: ArithmeticException, NullPointerException, ArrayIndexOutOfBoundsException, exceptions under Error class, etc.
 
 Checked Exceptions:
 
