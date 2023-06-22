@@ -2,7 +2,7 @@
 
 > The core advantage of exception handling is to maintain the normal flow of the application. An exception normally disrupts the normal flow of the application; that is why we need to handle exceptions.
 
-Unchecked Exceptions:
+Unchecked/Runtime Exceptions:
 
 - They are not checked at compile-time but at run-time.
 
@@ -10,9 +10,9 @@ For example: ArithmeticException, NullPointerException, ArrayIndexOutOfBoundsExc
 
 Checked Exceptions:
 
-- They are checked at compile-time. For example, IOException, InterruptedException, etc.
+- These have to be handled. For example, IOException, InterruptedException, etc.
 
-Usually, we don't need to handle unchecked exceptions. It's because unchecked exceptions occur due to programming errors. And, it is a good practice to correct them instead of handling them.
+You should handle all exceptions even runtime exceptions
 
 ### Java throw keyword
 
