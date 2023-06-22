@@ -10,6 +10,9 @@
     }
 ```
 
+- For POST request the parameter of the function will store the body
+- For GET it will store URI variables
+
 The body of this POST Request is:
 
 ```json
