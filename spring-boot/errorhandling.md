@@ -43,9 +43,22 @@ Make a global exception handler for your app so you can specify how to handle th
 public class AppExceptionHandler {
 
     @ExceptionHandler(JobNotFoundException.class)
-    public ResponseEntity<Object> JobNotFoundExceptionHandler(JobNotFoundException exception) {
-        ErrorResponse response = new ErrorResponse(exception.getMessage());
-        return new ResponseEntity<>(response, HttpStatus.NOT_FOUND);
+    public ResponseEntity<Object> JobNotFoundExceptionHandler(JobNotFoundException ex) {
+        ErrorResponse errorResponse = new ErrorResponse(ex.getMessage(), 404);
+        return new ResponseEntity<>(errorResponse, HttpStatus.NOT_FOUND);
+    }
+
+    // this handles wrong field inputs
+    @ExceptionHandler(MethodArgumentNotValidException.class)
+    public ResponseEntity<Object> handleValidationExceptions(MethodArgumentNotValidException ex) {
+        ArrayList<String> errors = new ArrayList<>();
+
+        ex.getBindingResult().getAllErrors().forEach((error) -> {
+            String errorMessage = error.getDefaultMessage();
+            errors.add(errorMessage);
+        });
+        ErrorResponse errorResponse = new ErrorResponse(errors, 400);
+        return new ResponseEntity<>(errorResponse, HttpStatus.BAD_REQUEST);
     }
 }
 
@@ -55,22 +68,40 @@ public class AppExceptionHandler {
 
 Make a pojo message class so it return a JSON object is returned when a exception is thrown:
 
-`{message: test status: 404}`
+`{"message": "test", "status": 404}`
 
 ```java
 public class ErrorResponse {
-private String message;
+    private ArrayList<String> messages = new ArrayList<>();
+    private long status;
 
-    public ErrorResponse(String message) {
-        this.message = message;
+    public ErrorResponse(String message, long status) {
+        this.messages.add(message);
+        this.status = status;
+    }
+    /*
+    This contructor accepts array b/c there can be
+    multiple errors that come in from wrong validations
+     */
+    public ErrorResponse(ArrayList<String> errors, long status) {
+        this.messages = errors;
+        this.status = status;
     }
 
-    public String getMessage() {
-        return message;
+    public ArrayList<String> getMessages() {
+        return messages;
     }
 
-    public void setMessage(String message) {
-        this.message = message;
+    public void setMessages(ArrayList<String> messages) {
+        this.messages = messages;
+    }
+
+    public long getStatus() {
+        return status;
+    }
+
+    public void setStatus(long status) {
+        this.status = status;
     }
 }
 ```
